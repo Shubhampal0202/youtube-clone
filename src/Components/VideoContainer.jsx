@@ -6,6 +6,8 @@ function VideoContainer() {
   const [videos, setVideos] = useState(null);
   const [error, setError] = useState(null);
   const categoryId = useSelector((state) => state.toggleSidebar.categoryId);
+  console.log(process.env.REACT_APP_YOUTUBE_API_KEY);
+  
  
 
   useEffect(() => {
